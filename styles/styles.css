@@ -1,0 +1,83 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Заголовки */
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background: #4CAF50;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Основное содержимое */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.welcome {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.welcome h2 {
+  color: #4CAF50;
+}
+
+button.btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button.btn:hover {
+  background: #45a049;
+}
+
+/* Список ссылок */
+.poems ul {
+  list-style: none;
+  padding: 0;
+}
+
+.poems ul li {
+  margin: 0.5rem 0;
+}
+
+.poems ul li a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.poems ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
