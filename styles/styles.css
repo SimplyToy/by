@@ -97,8 +97,6 @@ button.btn:hover {
   object-fit: cover; /* Чтобы плеер не искажался */
 }
 
-
-
 button.btn {
   display: inline-block;
   background: #4CAF50;
@@ -122,4 +120,64 @@ footer {
   background: #333;
   color: white;
   margin-top: auto;
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 768px) {
+  /* Главная карточка */
+  .main-card {
+    width: 90%;  /* Уменьшаем ширину карточки */
+    padding: 2rem; /* Уменьшаем отступы */
+  }
+
+  .main-card h2 {
+    font-size: 2rem; /* Уменьшаем размер заголовка */
+  }
+
+  .main-card p {
+    font-size: 1rem;  /* Уменьшаем размер текста */
+  }
+
+  button.btn {
+    font-size: 1.2rem;  /* Уменьшаем размер кнопки */
+    padding: 0.8rem 1.5rem;  /* Уменьшаем отступы в кнопке */
+  }
+
+  /* Карточки с видео */
+  .poem-card {
+    width: 100%;  /* Устанавливаем карточки на всю ширину */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .poem-card iframe {
+    height: 250px;  /* Уменьшаем высоту плеера */
+  }
+
+  /* Уменьшаем размеры шрифтов на мобильных устройствах */
+  .poem-card h3 {
+    font-size: 1.5rem; /* Уменьшаем размер заголовка */
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+/* Для очень маленьких экранов (например, телефоны в портретной ориентации) */
+@media screen and (max-width: 480px) {
+  /* Карточки с видео */
+  .poem-card iframe {
+    height: 200px; /* Еще меньше плеер */
+  }
+
+  /* Уменьшаем шрифты */
+  .poem-card h3 {
+    font-size: 1.3rem;  /* Уменьшаем размер шрифта */
+  }
+
+  button.btn {
+    font-size: 1rem;  /* Еще меньше кнопка */
+    padding: 0.7rem 1.2rem;  /* Уменьшаем отступы кнопки */
+  }
 }
