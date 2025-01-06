@@ -1,83 +1,56 @@
-/* Общие стили */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Установить высоту страницы на весь экран */
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
 
-/* Заголовки */
-header {
+/* Футер закреплён внизу */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 1.5rem;
-  background: #4CAF50;
+  padding: 1rem;
+  background: #333;
   color: white;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-/* Основное содержимое */
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section.welcome {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section.welcome h2 {
-  color: #4CAF50;
-}
-
-button.btn {
+/* Универсальный стиль кнопок */
+button.btn, a.btn {
   display: inline-block;
   background: #4CAF50;
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  text-decoration: none;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 1rem;
+  transition: background 0.3s;
 }
 
-button.btn:hover {
+button.btn:hover, a.btn:hover {
   background: #45a049;
 }
 
-/* Список ссылок */
-.poems ul {
-  list-style: none;
-  padding: 0;
+/* Стили карточек с YouTube плеерами */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-.poems ul li {
+.card h3 {
   margin: 0.5rem 0;
-}
-
-.poems ul li a {
-  text-decoration: none;
   color: #4CAF50;
 }
 
-.poems ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Футер */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: white;
+.card iframe {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
 }
